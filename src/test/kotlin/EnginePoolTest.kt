@@ -2,6 +2,7 @@ import io.elephantchess.engines.EnginePool
 import io.elephantchess.engines.process.EngineConfig
 import io.elephantchess.engines.process.PikafishEngineId
 import io.elephantchess.engines.protocol.model.InfoLineResult
+import io.elephantchess.xiangqi.Board.Companion.DEFAULT_START_FEN
 import kotlinx.coroutines.runBlocking
 import java.util.concurrent.Executors.newFixedThreadPool
 import kotlin.test.Test
@@ -11,7 +12,7 @@ import kotlin.test.assertTrue
 
 class EnginePoolTest {
 
-    private val startingFen = "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 0"
+    private val startingFen = DEFAULT_START_FEN
 
     @Test
     fun `parseInfoLine extracts depth, score and principal variation`() {
