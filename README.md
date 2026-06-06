@@ -10,6 +10,8 @@ The libraries are published via [JitPack](https://jitpack.io/#benckx/elephantche
 You can either use a released tag (e.g. `2.0.0`) or build the latest commit of a branch with the
 `-SNAPSHOT` suffix (e.g. `master-SNAPSHOT`).
 
+[![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
+
 ## Available artifacts
 
 All artifacts share the group `com.github.benckx.elephantchess`:
