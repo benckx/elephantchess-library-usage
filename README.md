@@ -10,19 +10,19 @@ The libraries are published via [JitPack](https://jitpack.io/#benckx/elephantche
 You can either use a released tag (e.g. `2.0.0`) or build the latest commit of a branch with the
 `-SNAPSHOT` suffix (e.g. `master-SNAPSHOT`).
 
-[![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
+[![Build](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml/badge.svg)](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml) [![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
 
 ## Available artifacts
 
 All artifacts share the group `com.github.benckx.elephantchess`:
 
-| Artifact                              | Description                           | Scope  |
-|---------------------------------------|---------------------------------------|--------|
-| `xiangqi-core`                        | Xiangqi (Chinese chess) board & rules | main   |
-| `xiangqi-core-test-utils`             | Test helpers (sample Xiangqi games)   | test   |
-| `engine-api`                          | Engine API                            | main   |
-| `seven-kingdoms-core`                 | Seven Kingdoms variant board & rules  | main   |
-| `seven-kingdoms-core-test-utils`      | Test helpers (sample 7K games)        | test   |
+| Artifact                         | Description                           | Scope |
+|----------------------------------|---------------------------------------|-------|
+| `xiangqi-core`                   | Xiangqi (Chinese chess) board & rules | main  |
+| `xiangqi-core-test-utils`        | Test helpers (sample Xiangqi games)   | test  |
+| `engine-api`                     | Engine API                            | main  |
+| `seven-kingdoms-core`            | Seven Kingdoms variant board & rules  | main  |
+| `seven-kingdoms-core-test-utils` | Test helpers (sample 7K games)        | test  |
 
 ## Kotlin Gradle (`build.gradle.kts`)
 
