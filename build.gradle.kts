@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ben.manes.versions)
+    alias(libs.plugins.test.logger)
     application
 }
 
@@ -23,6 +24,8 @@ application {
 
 tasks.test {
     useJUnitPlatform()
+    minHeapSize = "512M"
+    maxHeapSize = "512M"
 }
 
 kotlin {
