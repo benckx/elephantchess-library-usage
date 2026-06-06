@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.2.20"
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.ben.manes.versions)
     application
 }
 
@@ -9,8 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.benckx.elephantchess:xiangqi-core:master-SNAPSHOT")
-    implementation("com.github.benckx.elephantchess:engine-api:master-SNAPSHOT")
+    implementation(libs.elephantchess.xiangqi.core)
+    implementation(libs.elephantchess.engine.api)
+    implementation(libs.elephantchess.seven.kingdoms.core)
 
     testImplementation(kotlin("test"))
 }
