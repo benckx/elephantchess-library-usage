@@ -11,5 +11,5 @@
     </root>
 
     <!-- Enable DEBUG level for elephantchess engine API -->
-    <logger name="com.github.benckx.elephantchess.engine" level="DEBUG" />
+    <logger name="io.elephantchess.engines" level="DEBUG" />
 </configuration>
