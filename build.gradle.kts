@@ -22,10 +22,6 @@ dependencies {
     testRuntimeOnly(libs.slf4j.simple)
 }
 
-application {
-    mainClass.set("MainKt")
-}
-
 tasks.test {
     useJUnitPlatform()
     minHeapSize = "512M"
