@@ -15,6 +15,7 @@ dependencies {
     implementation(libs.elephantchess.engine.api)
     implementation(libs.elephantchess.seven.kingdoms.core)
 
+    testImplementation(libs.elephantchess.seven.kingdoms.core.test.utils)
     testImplementation(kotlin("test"))
 }
 

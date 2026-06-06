@@ -8,6 +8,7 @@ testLogger = "4.0.0"
 elephantchess-xiangqi-core = { module = "com.github.benckx.elephantchess:xiangqi-core", version.ref = "elephantchess" }
 elephantchess-engine-api = { module = "com.github.benckx.elephantchess:engine-api", version.ref = "elephantchess" }
 elephantchess-seven-kingdoms-core = { module = "com.github.benckx.elephantchess:seven-kingdoms-core", version.ref = "elephantchess" }
+elephantchess-seven-kingdoms-core-test-utils = { module = "com.github.benckx.elephantchess:seven-kingdoms-core-test-utils", version.ref = "elephantchess" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
