@@ -27,6 +27,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Install Pikafish dependencies
+        run: sudo apt-get update && sudo apt-get install -y libatomic1
+
       - name: Set up JDK 21
         uses: actions/setup-java@v5
         with:
