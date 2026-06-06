@@ -7,7 +7,7 @@ The libraries are published via [JitPack](https://jitpack.io/#benckx/elephantche
 1. add the JitPack repository
 2. declare the dependencies you need
 
-You can either use a released tag (e.g. `2.0.0`) or build the latest commit of a branch with the
+You can either use a released tag (e.g. `2.0.1`) or build the latest commit of a branch with the
 `-SNAPSHOT` suffix (e.g. `master-SNAPSHOT`).
 
 [![Build](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml/badge.svg)](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml) [![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
@@ -33,12 +33,12 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.benckx.elephantchess:xiangqi-core:2.0.0")
-    implementation("com.github.benckx.elephantchess:engine-api:2.0.0")
-    implementation("com.github.benckx.elephantchess:seven-kingdoms-core:2.0.0")
+    implementation("com.github.benckx.elephantchess:xiangqi-core:2.0.1")
+    implementation("com.github.benckx.elephantchess:engine-api:2.0.1")
+    implementation("com.github.benckx.elephantchess:seven-kingdoms-core:2.0.1")
 
-    testImplementation("com.github.benckx.elephantchess:xiangqi-core-test-utils:2.0.0")
-    testImplementation("com.github.benckx.elephantchess:seven-kingdoms-core-test-utils:2.0.0")
+    testImplementation("com.github.benckx.elephantchess:xiangqi-core-test-utils:2.0.1")
+    testImplementation("com.github.benckx.elephantchess:seven-kingdoms-core-test-utils:2.0.1")
 }
 ```
 
@@ -48,7 +48,7 @@ This is the approach used by this project:
 
 ```toml
 [versions]
-elephantchess = "2.0.0"
+elephantchess = "2.0.1"
 
 [libraries]
 elephantchess-xiangqi-core = { module = "com.github.benckx.elephantchess:xiangqi-core", version.ref = "elephantchess" }
@@ -78,12 +78,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.benckx.elephantchess:xiangqi-core:2.0.0'
-    implementation 'com.github.benckx.elephantchess:engine-api:2.0.0'
-    implementation 'com.github.benckx.elephantchess:seven-kingdoms-core:2.0.0'
+    implementation 'com.github.benckx.elephantchess:xiangqi-core:2.0.1'
+    implementation 'com.github.benckx.elephantchess:engine-api:2.0.1'
+    implementation 'com.github.benckx.elephantchess:seven-kingdoms-core:2.0.1'
 
-    testImplementation 'com.github.benckx.elephantchess:xiangqi-core-test-utils:2.0.0'
-    testImplementation 'com.github.benckx.elephantchess:seven-kingdoms-core-test-utils:2.0.0'
+    testImplementation 'com.github.benckx.elephantchess:xiangqi-core-test-utils:2.0.1'
+    testImplementation 'com.github.benckx.elephantchess:seven-kingdoms-core-test-utils:2.0.1'
 }
 ```
 
