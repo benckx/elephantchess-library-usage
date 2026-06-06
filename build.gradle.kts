@@ -5,9 +5,13 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
+    implementation("com.github.benckx.elephantchess:xiangqi-core:master-SNAPSHOT")
+    implementation("com.github.benckx.elephantchess:engine-api:master-SNAPSHOT")
+
     testImplementation(kotlin("test"))
 }
 
