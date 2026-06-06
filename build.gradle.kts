@@ -26,6 +26,9 @@ tasks.test {
     useJUnitPlatform()
     minHeapSize = "512M"
     maxHeapSize = "512M"
+    testLogging {
+        showStandardStreams = true
+    }
 }
 
 kotlin {
