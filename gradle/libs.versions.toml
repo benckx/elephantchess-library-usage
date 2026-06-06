@@ -1,10 +1,13 @@
 [versions]
 kotlin = "2.4.0"
-elephantchess = "2.0.0"
+elephantchess = "2.0.1"
 benManesVersions = "0.54.0"
 testLogger = "4.0.0"
+kotlinxCoroutines = "1.11.0"
 
 [libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version = "2.0.16" }
 elephantchess-xiangqi-core = { module = "com.github.benckx.elephantchess:xiangqi-core", version.ref = "elephantchess" }
 elephantchess-xiangqi-core-test-utils = { module = "com.github.benckx.elephantchess:xiangqi-core-test-utils", version.ref = "elephantchess" }
 elephantchess-engine-api = { module = "com.github.benckx.elephantchess:engine-api", version.ref = "elephantchess" }

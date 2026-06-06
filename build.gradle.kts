@@ -17,7 +17,9 @@ dependencies {
 
     testImplementation(libs.elephantchess.xiangqi.core.test.utils)
     testImplementation(libs.elephantchess.seven.kingdoms.core.test.utils)
+    testImplementation(libs.kotlinx.coroutines.core)
     testImplementation(kotlin("test"))
+    testRuntimeOnly(libs.slf4j.simple)
 }
 
 application {
