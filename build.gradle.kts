@@ -19,7 +19,7 @@ dependencies {
     testImplementation(libs.elephantchess.seven.kingdoms.core.test.utils)
     testImplementation(libs.kotlinx.coroutines.core)
     testImplementation(kotlin("test"))
-    testRuntimeOnly(libs.slf4j.simple)
+    testRuntimeOnly(libs.logback.classic)
 }
 
 tasks.test {
