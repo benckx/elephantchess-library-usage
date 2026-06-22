@@ -55,4 +55,29 @@ class EnginePoolTest {
         }
     }
 
+    @Test
+    fun `Pikafish suggests a best move when querying for a fixed number of nodes`() {
+        val engineConfig = EngineConfig("2023-03-05", poolSize = 1, numberOfThreads = 1)
+        val enginePool = EnginePool(mapOf(PikafishEngineId to engineConfig), newFixedThreadPool(2))
+
+        try {
+            runBlocking {
+                val infoLinesResult = enginePool.queryForNodes(startingFen, PikafishEngineId, nodes = 1_000_000, timeout = 10_000)
+
+                assertNotNull(infoLinesResult, "the engine should return a result")
+                assertEquals(false, infoLinesResult.checkmate)
+
+                val bestMove = infoLinesResult.bestMove
+                assertNotNull(bestMove, "the engine should return a best move")
+                assertEquals(4, bestMove.length, "a UCI move is encoded with 4 characters")
+
+                val deepestResult = infoLinesResult.deepestResult()
+                assertNotNull(deepestResult, "the engine should return at least one info line")
+                assertEquals(bestMove, deepestResult.pv.first(), "best move is the first move of the deepest pv")
+            }
+        } finally {
+            enginePool.close()
+        }
+    }
+
 }
