@@ -1,3 +1,5 @@
+[![Build](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml/badge.svg)](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml) [![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
+
 # About
 
 Sample project to check we can use libraries from https://github.com/benckx/elephantchess
@@ -9,8 +11,6 @@ The libraries are published via [JitPack](https://jitpack.io/#benckx/elephantche
 
 You can either use a released tag (e.g. `2.1.0`) or build the latest commit of a branch with the
 `-SNAPSHOT` suffix (e.g. `master-SNAPSHOT`).
-
-[![Build](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml/badge.svg)](https://github.com/benckx/elephantchess-library-usage/actions/workflows/build.yml) [![](https://www.jitpack.io/v/benckx/elephantchess.svg)](https://www.jitpack.io/#benckx/elephantchess)
 
 ## Available artifacts
 
