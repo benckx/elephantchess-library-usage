@@ -4,7 +4,7 @@ elephantchess = "2.1.0"
 benManesVersions = "0.64.0"
 testLogger = "4.0.0"
 kotlinxCoroutines = "1.11.0"
-logback = "1.6.3"
+logback = "1.6.4"
 
 [libraries]
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
