@@ -1,7 +1,7 @@
 [versions]
-kotlin = "2.4.20"
+kotlin = "2.4.21"
 elephantchess = "2.1.0"
-benManesVersions = "0.65.0"
+benManesVersions = "0.66.0"
 testLogger = "4.0.0"
 kotlinxCoroutines = "1.11.0"
 logback = "1.6.5"
